@@ -102,7 +102,20 @@ The difference between accuracy and macro F1 highlights the impact of class imba
 - Further work should verify subject-level separation, refine annotation handling, improve minority-class performance, and compare models using consistent evaluation protocols.
 - Additional experiments could investigate class-aware training, improved RR feature design, and alternative architectures.
 
-## Technologies Used
+## Repository Contents
+
+- `ecg-arrhythmia-detection.ipynb` — Complete workflow for ECG preprocessing, feature engineering, model training, and evaluation.
+- `models/best_ecg_cnn.pt` — Saved CNN model weights.
+- `results/cnn_training_history` — Training and validation metrics across epochs.
+- `results/class_distribution_summary` — Heartbeat class counts across datasets.
+- `results/baseline_results` — Baseline model evaluation results.
+
+## How to Reproduce
+1. Open the notebook in Google Colab.
+2. Install the required Python libraries, including WFDB, SciPy, scikit-learn, PyTorch, NumPy, Pandas, and Matplotlib.
+3. Download the MIT-BIH Arrhythmia Database from [PhysioNet](https://physionet.org/content/mitdb/).
+4. Run the notebook cells in order to preprocess the ECG data, train the model, and evaluate its performance.
+\## Technologies Used
 
 Python · NumPy · Pandas · SciPy · WFDB · scikit-learn · PyTorch · Matplotlib
 
